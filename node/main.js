@@ -6,7 +6,7 @@ var http = require('http')
 var app = express()
 var http_proxy = require('http-proxy')
 // REDIS
-var client = redis.createClient(6379, '127.0.0.1', {})
+var client = redis.createClient(50100, '10.0.2.15', {})
 
 client.set()
 

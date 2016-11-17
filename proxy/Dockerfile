@@ -15,5 +15,4 @@ RUN  echo $PATH
 #RUN  node /src/main.js 8080
 
 EXPOSE 3002 
-CMD ["proxy", "/src/proxy.js"]
-
+CMD ["node", "/src/proxy.js"]
