@@ -1,0 +1,7 @@
+#!/bin/sh
+
+GIT_WORK_TREE=$ROOT/blue-www/ git checkout -f
+docker pull localhost:5000/ncsu:latest
+docker stop ncsuApp
+docker rm ncsuApp
+docker run -p 9000:8080 -d --name ncsuApp ncsu
